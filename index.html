@@ -1,0 +1,177 @@
+<html>
+<head>
+	<title>Login Page</title>
+	<!-- <link rel="stylesheet" href="styles.css"> -->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+</head>
+<body>
+	<header>
+		<div class="main">
+
+			<div class="logo">
+				<img src="https://logodownload.org/wp-content/uploads/2019/07/mini-logo.png">
+			</div>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Member Details</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12 offset=md-1">
+				<div class="row">
+					<div class="col-md-5 register-left">
+						<h3>Welcome To Chaitanya Kuteer</h3>
+						<p>If You Want To Join Chaitanya Kuteer Just Register Here</p>
+						<form class="container-fluid animate" id="contact-form" style = "width: 50%;" action="http://localhost:3000/api/v1/retailers/member_registration">
+							<button type="submit" class="btn btn-primary">Register Here</button>
+						</form>
+					</div>
+					<form class="container-fluid animate" id="contact-form" style = "width: 50%;" action="http://localhost:3000/api/v1/retailers/login_page">
+
+					<div class="col-md-7 register-right">
+						<h2>Login Here</h2>
+						<div class="register-form">
+							<div class="form-group">
+								<input type="email" class="form-control" placeholder="Enter Email"  name="uname" required>
+							</div>
+						</div>
+						<div class="register-form">
+							<div class="form-group">
+								<input type="password" class="form-control" placeholder="Enter Password" name="psw" required>
+							</div>
+						</div>
+						<button type="submit" class="btn btn-primary">Login</button>
+						
+					</div>
+				</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+<style>
+
+header{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('http://jmsunchild.com/wp-content/uploads/2018/09/photography.jpg');
+	height:100px;
+	background-size: cover;
+	/*background-position: center;*/
+}
+ul{
+	list-style-type: none;
+	float:right;
+	margin-top: 40px;
+	margin-right: 25px;
+
+}
+ul li {
+	display: inline-block;
+
+}
+ul li a
+{
+	text-decoration: none;
+	color:#fff;
+	padding: 20px 20px;
+	border: 1px solid transparent;
+	transition: 0.6s ease;
+}
+ul li.active a
+{
+background-color: #fff;
+color:#000;
+}
+ul li a:hover
+{
+	background-color: #fff;
+	color:#000;
+	text-decoration: none;
+}
+.logo img
+{
+	float:left;
+	width: 200px;
+	height:auto;
+	margin-top: 7px;
+}
+.main
+{
+	max-width: 1200px;
+	height: 40px;
+	margin: auto;
+}
+
+.title
+{
+	position: absolute;
+	top:50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1{
+	color:black;
+}
+
+
+.button
+{
+position: absolute;
+	top:60%;
+	left: 50%;
+	transform: translate(-50%,-50%);	
+}
+
+.btn
+{
+	border: 1px solid #fff;
+	padding:10px 30px;
+	color:white;
+	text-decoration: none;
+}
+
+
+	body
+{
+	background-image:linear-gradient(to right,#ff5722,#ff9800);
+	margin-top: 20px !important;
+}
+
+.container
+{
+	margin-top: 200px;
+	margin-left: 200px;
+}
+
+.register-left
+{
+	text-align: center;
+	color: #fff;
+	margin-top: 10px;
+	padding: :30px;
+}
+.register-left p
+{
+padding:22px 20px 0;	
+}
+.register-left .btn-primary
+{
+	border-radius: 1.5rem;
+	border: none;
+	width: 120px;
+	background:#f8f8f8;
+	font-weight: 600;
+	color:#555;
+	margin-top: 25px; 
+	padding: 10px;
+}
+.register-left .btn-primary:hover{
+background: #000;
+
+}
+
+</style>
+</html>
